@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ficha Alumno | EducaPeque</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>🌈 AulaPeque</h2>
+    <nav>
+      <a href="home.html">🏠 Inicio</a>
+      <a href="cursos.html">📚 Cursos</a>
+      <a href="agenda.html">📅 Agenda</a>
+      <a href="observaciones.html">📝 Observaciones</a>
+      <a href="perfil.html">👤 Mi perfil</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <div class="header">
+      <div>
+        <h1>👧 Ficha del Alumno</h1>
+        <p>Información general, estado y observaciones</p>
+      </div>
+      <div class="user-box">Cargando usuario...</div>
+    </div>
+
+    <a id="volverCurso" class="btn" href="cursos.html">⬅ Volver</a>
+    <br><br>
+
+    <section id="datosAlumno" class="ficha-card"></section>
+
+    <br>
+
+    <section class="card">
+      <h3>🚦 Estado conductual</h3>
+
+      <select id="estadoConductual">
+        <option value="verde">🟢 Verde - Buen día</option>
+        <option value="amarillo">🟡 Amarillo - Requiere apoyo</option>
+        <option value="rojo">🔴 Rojo - Necesita seguimiento</option>
+      </select>
+
+      <button id="guardarEstado">Guardar estado</button>
+    </section>
+
+    <br>
+
+    <a id="btnObservacion" class="btn-alumno btn-observacion" href="#">
+      ➕ Agregar observación
+    </a>
+
+    <br><br>
+
+    <section class="card">
+      <h3>📝 Observaciones del alumno</h3>
+      <div id="listaObservaciones"></div>
+    </section>
+  </main>
+
+  <script src="js/fichaAlumno.js"></script>
+  <script src="js/usuarioUI.js"></script>
+</body>
+</html>

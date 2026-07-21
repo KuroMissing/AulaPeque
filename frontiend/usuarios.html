@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Usuarios y roles | AulaPeque</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <aside class="sidebar">
+    <h2>🌈 AulaPeque</h2>
+
+    <nav>
+      <a href="home.html">🏠 Inicio</a>
+      <a href="cursos.html">📚 Cursos</a>
+      <a href="usuarios.html">⚙️ Usuarios y roles</a>
+      <a href="perfil.html">👤 Mi perfil</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="header">
+      <div>
+        <h1>⚙️ Usuarios y roles</h1>
+        <p>Administración de cuentas del establecimiento</p>
+      </div>
+
+      <div class="user-box">
+        Directivo/a
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>➕ Crear usuario</h3>
+
+      <form id="formUsuario">
+
+        <input
+          type="text"
+          id="nombre"
+          placeholder="Nombre completo"
+          required>
+
+        <input
+          type="email"
+          id="correo"
+          placeholder="Correo"
+          required>
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Contraseña inicial"
+          minlength="6"
+          required>
+
+        <select id="rol" required>
+          <option value="asistente">Asistente</option>
+          <option value="profesor">Profesor/a</option>
+          <option value="directivo">Directivo/a</option>
+        </select>
+
+        <button type="submit">
+          Crear usuario
+        </button>
+
+      </form>
+    </div>
+
+    <br>
+
+    <div class="titulo-pagina">
+      <h2>Usuarios registrados</h2>
+    </div>
+
+    <div id="listaUsuarios"></div>
+
+  </main>
+
+  <script src="js/usuarios.js"></script>
+</body>
+</html>

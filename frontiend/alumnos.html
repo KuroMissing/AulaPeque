@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alumnos | EducaPeque</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>🌈 AulaPeque</h2>
+    <nav>
+      <a href="home.html">🏠 Inicio</a>
+      <a href="cursos.html">📚 Cursos</a>
+      <a href="agenda.html">📅 Agenda</a>
+      <a href="observaciones.html">📝 Observaciones</a>
+      <a href="perfil.html">👤 Mi perfil</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <div class="header">
+      <div>
+        <h1>👧 Alumnos del Curso</h1>
+        <p>Listado de estudiantes registrados</p>
+      </div>
+      <div class="user-box">Cargando usuario...</div>
+    </div>
+
+    <div class="card">
+      <h3>➕ Agregar Alumno</h3>
+      <form id="formAlumno">
+        <input type="text" id="nombre" placeholder="Nombre alumno" required>
+        <input type="number" id="edad" placeholder="Edad" required>
+        <input type="text" id="apoderado" placeholder="Nombre apoderado">
+        <input type="text" id="telefonoApoderado" placeholder="Teléfono apoderado">
+        <button type="submit">Guardar Alumno</button>
+      </form>
+    </div>
+
+    <br>
+    <div class="titulo-alumnos"><h2>Listado de alumnos</h2></div>
+    <div id="listaAlumnos"></div>
+  </main>
+
+  <script src="js/alumnos.js"></script>
+  <script src="js/usuarioUI.js"></script>
+</body>
+</html>

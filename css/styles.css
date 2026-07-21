@@ -1,0 +1,48 @@
+
+
+.menu {
+  width: 220px;
+  height: 100vh;
+  background: white;
+  position: fixed;
+  padding: 20px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+}
+
+.menu a {
+  display: block;
+  margin: 15px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+.contenido {
+  margin-left: 250px;
+  padding: 30px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card, .alumno-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 230px;
+}
+
+.grid-alumnos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.avatar {
+  font-size: 50px;
+  text-align: center;
+}
+

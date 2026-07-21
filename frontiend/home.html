@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio | EducaPeque</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>🌈 AulaPeque</h2>
+    <nav>
+      <a href="home.html">🏠 Inicio</a>
+      <a href="cursos.html">📚 Cursos</a>
+      <a href="agenda.html">📅 Agenda</a>
+      <a href="observaciones.html">📝 Observaciones</a>
+      <a href="perfil.html">👤 Mi perfil</a>
+      <a href="usuarios.html" id="enlaceAdministracion" class="oculto">⚙️ Usuarios y roles</a>
+      <a href="#" id="cerrarSesion">🚪 Cerrar sesión</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <header class="header">
+      <div>
+        <h1 id="bienvenida">Bienvenido/a</h1>
+        <p>Panel principal de gestión pedagógica</p>
+      </div>
+      <div class="user-box">Cargando usuario...</div>
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <h3>📚 Cursos</h3>
+        <p>Gestiona los cursos registrados.</p>
+        <a href="cursos.html" class="btn">Ver cursos</a>
+      </div>
+
+      <div class="card">
+        <h3>📅 Agenda</h3>
+        <p>Organiza las actividades pedagógicas.</p>
+        <a href="agenda.html" class="btn">Ver agenda</a>
+      </div>
+
+      <div class="card">
+        <h3>📝 Observaciones</h3>
+        <p>Revisa las observaciones de los alumnos.</p>
+        <a href="observaciones.html" class="btn">Ver observaciones</a>
+      </div>
+
+      <div class="card">
+        <h3>👤 Mi perfil</h3>
+        <p>Modifica tus datos personales y contraseña.</p>
+        <a href="perfil.html" class="btn">Modificar perfil</a>
+      </div>
+
+      <div class="card oculto" id="tarjetaAdministracion">
+        <h3>⚙️ Administración</h3>
+        <p>Crea usuarios y asigna roles.</p>
+        <a href="usuarios.html" class="btn">Administrar usuarios</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/home.js"></script>
+  <script src="js/usuarioUI.js"></script>
+</body>
+</html>

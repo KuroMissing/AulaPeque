@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mi perfil | AulaPeque</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+  <aside class="sidebar">
+    <h2>🌈 AulaPeque</h2>
+
+    <nav>
+      <a href="home.html">🏠 Inicio</a>
+      <a href="cursos.html">📚 Cursos</a>
+      <a href="usuarios.html">⚙️ Usuarios y roles</a>
+      <a href="perfil.html">👤 Mi perfil</a>
+      <a href="observaciones.html">📝 Observaciones</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="header">
+      <div>
+        <h1>⚙️ Usuarios y roles</h1>
+        <p>Administración de cuentas del establecimiento</p>
+      </div>
+
+      <div class="user-box">
+        Directivo/a
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="header">
+      <div>
+        <h1>👤 Mi perfil</h1>
+        <p>Actualiza tus datos personales</p>
+      </div>
+
+      <div class="user-box" id="rolUsuario"></div>
+    </div>
+
+    <div class="card">
+
+      <form id="formPerfil">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" required>
+
+        <hr class="separador">
+
+        <h3>🔐 Cambiar contraseña</h3>
+
+        <input
+          type="password"
+          id="passwordActual"
+          placeholder="Contraseña actual">
+
+        <input
+          type="password"
+          id="nuevaPassword"
+          placeholder="Nueva contraseña">
+
+        <button type="submit">
+          Guardar cambios
+        </button>
+
+      </form>
+
+    </div>
+
+  </main>
+
+  <script src="js/perfil.js"></script>
+</body>
+</html>

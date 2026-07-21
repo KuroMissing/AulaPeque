@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda | EducaPeque</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>🌈 AulaPeque</h2>
+    <nav>
+      <a href="home.html">🏠 Inicio</a>
+      <a href="cursos.html">📚 Cursos</a>
+      <a href="observaciones.html">📝 Observaciones</a>
+      <a href="perfil.html">👤 Mi perfil</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <div class="header">
+      <div>
+        <h1>📅 Planificador Pedagógico</h1>
+        <p>Organiza actividades diarias por curso</p>
+      </div>
+      <div class="user-box">Cargando usuario...</div>
+    </div>
+
+    <a id="volverCurso" class="btn" href="cursos.html">⬅ Volver al curso</a>
+    <br><br>
+
+    <div class="card">
+      <h3>➕ Nueva actividad</h3>
+
+      <form id="formActividad">
+        <div class="grupo-formulario">
+          <h4>📚 Información general</h4>
+
+          <div class="fila-formulario">
+            <select id="curso" required>
+              <option value="">Seleccione un curso</option>
+            </select>
+
+            <select id="tipo" required>
+              <option value="clase">Clase</option>
+              <option value="juego">Juego</option>
+              <option value="colacion">Colación</option>
+              <option value="descanso">Descanso</option>
+              <option value="evaluacion">Evaluación</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <input type="text" id="titulo" placeholder="Título de la actividad" required>
+
+          <select id="estado">
+            <option value="pendiente">Pendiente</option>
+            <option value="realizada">Realizada</option>
+            <option value="cancelada">Cancelada</option>
+          </select>
+        </div>
+
+        <div class="grupo-formulario">
+          <h4>🗓 Programación</h4>
+
+          <div class="fila-formulario">
+            <input type="date" id="fecha" required>
+            <input type="time" id="horaInicio" required>
+          </div>
+
+          <input type="time" id="horaFin">
+        </div>
+
+        <div class="grupo-formulario">
+          <h4>🎯 Planificación pedagógica</h4>
+          <input type="text" id="objetivo" placeholder="Objetivo de aprendizaje">
+          <textarea id="descripcion" placeholder="Descripción de la actividad"></textarea>
+          <textarea id="materiales" placeholder="Materiales necesarios"></textarea>
+          <input type="text" id="responsable" placeholder="Responsable">
+        </div>
+
+        <button type="submit">Guardar actividad</button>
+      </form>
+    </div>
+
+    <br>
+    <div class="titulo-pagina">
+      <h2>Listado de actividades</h2>
+      <p>Actividades planificadas para el curso seleccionado</p>
+    </div>
+
+    <div id="listaActividades"></div>
+  </main>
+
+  <script src="js/agenda.js"></script>
+  <script src="js/usuarioUI.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Observaciones | EducaPeque</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>🌈 AulaPeque</h2>
+    <nav>
+      <a href="home.html">🏠 Inicio</a>
+      <a href="cursos.html">📚 Cursos</a>
+      <a href="agenda.html">📅 Agenda</a>
+      <a href="perfil.html">👤 Mi perfil</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <div class="header">
+      <div>
+        <h1>📝 Observaciones</h1>
+        <p>Registro conductual y pedagógico de los estudiantes</p>
+      </div>
+      <div class="user-box">Cargando usuario...</div>
+    </div>
+
+    <a id="volverCurso" class="btn" href="cursos.html">⬅ Volver al curso</a>
+    <br><br>
+
+    <div class="card">
+      <h3>➕ Nueva observación</h3>
+      <form id="formObservacion">
+        <select id="alumno" required>
+          <option value="">Seleccione un alumno</option>
+        </select>
+
+        <select id="tipo" required>
+          <option value="conducta">Conducta</option>
+          <option value="aprendizaje">Aprendizaje</option>
+          <option value="emocional">Emocional</option>
+          <option value="participacion">Participación</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <textarea id="detalle" placeholder="Escribe una observación" required></textarea>
+        <button type="submit">Guardar observación</button>
+      </form>
+    </div>
+
+    <br>
+    <div class="titulo-pagina"><h2>Historial de observaciones</h2></div>
+    <div id="listaObservaciones"></div>
+  </main>
+
+  <script src="js/observaciones.js"></script>
+  <script src="js/usuarioUI.js"></script>
+</body>
+</html>

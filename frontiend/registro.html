@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Crear cuenta | AulaPeque</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-page">
+
+  <div class="login-container">
+
+    <div class="logo-area">
+      <div class="logo-circle">👩‍🏫</div>
+      <h1>Crear cuenta</h1>
+      <p>Regístrate para acceder a AulaPeque</p>
+    </div>
+
+    <form id="formRegistro">
+
+      <input
+        type="text"
+        id="nombre"
+        placeholder="Nombre completo"
+        required>
+
+      <input
+        type="email"
+        id="correo"
+        placeholder="Correo electrónico"
+        required>
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Contraseña"
+        minlength="6"
+        required>
+
+      <input
+        type="password"
+        id="confirmarPassword"
+        placeholder="Confirmar contraseña"
+        minlength="6"
+        required>
+
+      <button type="submit">
+        Crear cuenta
+      </button>
+
+    </form>
+
+    <p class="texto-registro">
+      ¿Ya tienes una cuenta?
+      <a href="login.html">Iniciar sesión</a>
+    </p>
+
+  </div>
+
+  <script src="js/registro.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cursos | EducaPeque</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <aside class="sidebar">
+    <h2>🌈 AulaPeque</h2>
+
+    <nav>
+      <a href="home.html">🏠 Inicio</a>
+      <a href="agenda.html">📅 Agenda</a>
+      <a href="observaciones.html">📝 Observaciones</a>
+      <a href="perfil.html">👤 Mi perfil</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="header">
+      <div>
+        <h1>📚 Mis cursos</h1>
+        <p id="subtituloCursos">
+          Gestiona los cursos registrados
+        </p>
+      </div>
+
+      <div class="user-box">
+        Cargando usuario...
+      </div>
+    </div>
+
+    <div class="card" id="seccionCrearCurso">
+      <h3>➕ Agregar curso</h3>
+
+      <form id="formCurso">
+        <input
+          type="text"
+          id="nombre"
+          placeholder="Nombre del curso"
+          required>
+
+        <input
+          type="text"
+          id="nivel"
+          placeholder="Nivel"
+          required>
+
+        <input
+          type="text"
+          id="descripcion"
+          placeholder="Descripción">
+
+        <button type="submit">
+          Guardar curso
+        </button>
+      </form>
+    </div>
+
+    <br id="separadorCrearCurso">
+
+    <div class="titulo-pagina">
+      <h2>Listado de cursos</h2>
+
+      <p id="descripcionListado">
+        Cursos registrados en el establecimiento
+      </p>
+    </div>
+
+    <div id="listaCursos"></div>
+
+  </main>
+
+  <script src="js/cursos.js"></script>
+  <script src="js/usuarioUI.js"></script>
+</body>
+
+</html>
