@@ -56,7 +56,7 @@ guardarEstado.addEventListener("click", async () => {
   try {
     const nuevoEstado = selectEstado.value;
 
-    const respuesta = await fetch(`http://localhost:5000/api/alumnos/${alumnoId}/estado`, {
+    const respuesta = await fetch(`https://aulapeque-api.onrender.com/api/alumnos/${alumnoId}/estado`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json"
@@ -87,7 +87,7 @@ async function cargarObservaciones() {
       return;
     }
 
-    const respuesta = await fetch(`http://localhost:5000/api/observaciones/alumno/${alumnoId}`);
+    const respuesta = await fetch(`https://aulapeque-api.onrender.com/api/observaciones/alumno/${alumnoId}`);
     const observaciones = await respuesta.json();
 
     listaObservaciones.innerHTML = "";
@@ -125,7 +125,7 @@ async function eliminarObservacion(id) {
   if (!confirmar) return;
 
   try {
-    const respuesta = await fetch(`http://localhost:5000/api/observaciones/${id}`, {
+    const respuesta = await fetch(`https://aulapeque-api.onrender.com/api/observaciones/${id}`, {
       method: "DELETE"
     });
 
