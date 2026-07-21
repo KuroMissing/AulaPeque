@@ -20,7 +20,7 @@ async function cargarFichaAlumno() {
       return;
     }
 
-    const respuesta = await fetch(`http://localhost:5000/api/alumnos/${alumnoId}`);
+    const respuesta = await fetch(`https://aulapeque-api.onrender.com/api/alumnos/${alumnoId}`);
     const alumno = await respuesta.json();
 
     datosAlumno.innerHTML = `

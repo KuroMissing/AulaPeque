@@ -1,4 +1,4 @@
-const API_PERFIL = "http://localhost:5000/api/usuarios/perfil";
+const API_PERFIL = "https://aulapeque-api.onrender.com/api/usuarios/perfil";
 
 const token = localStorage.getItem("token");
 const usuarioGuardadoTexto = localStorage.getItem("usuario");

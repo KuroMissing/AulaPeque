@@ -1,4 +1,4 @@
-const API_REGISTRO = "http://localhost:5000/api/auth/register";
+const API_REGISTRO = "https://aulapeque-api.onrender.com/api/auth/register";
 
 const formRegistro = document.getElementById("formRegistro");
 

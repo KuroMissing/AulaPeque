@@ -1,5 +1,5 @@
-const API_CURSOS = "http://localhost:5000/api/cursos";
-const API_ACTIVIDADES = "http://localhost:5000/api/actividades";
+const API_CURSOS = "https://aulapeque-api.onrender.com/api/cursos";
+const API_ACTIVIDADES = "https://aulapeque-api.onrender.com/api/actividades";
 
 const params = new URLSearchParams(window.location.search);
 const cursoIdURL = params.get("curso");

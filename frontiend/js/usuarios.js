@@ -1,4 +1,4 @@
-const API_USUARIOS = "http://localhost:5000/api/usuarios";
+const API_USUARIOS = "https://aulapeque-api.onrender.com/api/usuarios";
 
 const token = localStorage.getItem("token");
 const usuarioActual =

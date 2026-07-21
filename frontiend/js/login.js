@@ -1,4 +1,4 @@
-const API_LOGIN = "http://localhost:5000/api/auth/login";
+const API_LOGIN = "https://aulapeque-api.onrender.com/api/auth/login";
 
 const formLogin = document.getElementById("formLogin");
 

@@ -23,7 +23,7 @@ formAlumno.addEventListener("submit", async (e) => {
   };
 
   try {
-    const respuesta = await fetch("http://localhost:5000/api/alumnos", {
+    const respuesta = await fetch("https://aulapeque-api.onrender.com/api/alumnos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

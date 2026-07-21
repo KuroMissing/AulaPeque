@@ -1,5 +1,5 @@
-const API_CURSOS = "http://localhost:5000/api/cursos";
-const API_USUARIOS = "http://localhost:5000/api/usuarios";
+const API_CURSOS = "https://aulapeque-api.onrender.com/api/cursos";
+const API_USUARIOS = "https://aulapeque-api.onrender.com/api/usuarios";
 
 const tokenCursos = localStorage.getItem("token");
 const usuarioTextoCursos = localStorage.getItem("usuario");
