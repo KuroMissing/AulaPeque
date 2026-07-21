@@ -57,7 +57,7 @@ async function cargarAlumnos() {
       return;
     }
 
-    const respuesta = await fetch(`http://localhost:5000/api/alumnos/curso/${cursoId}`);
+    const respuesta = await fetch(`https://aulapeque-api.onrender.com/api/alumnos/curso/${cursoId}`);
 
     if (!respuesta.ok) {
       throw new Error("Error al consultar alumnos");
